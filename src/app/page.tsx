@@ -120,8 +120,8 @@ export default function Home() {
               
               {isLoading && (
                 <div className="mt-6 space-y-4">
-                  {[...Array(3)].map((_, i) => (
-                    <div key={i} className="flex flex-col gap-3">
+                  {[...Array(3)].map((_, index) => (
+                    <div key={index} className="flex flex-col gap-3">
                       <div className="h-4 w-3/4 bg-muted/30 rounded-full animate-pulse"></div>
                       <div className="h-4 w-full bg-muted/30 rounded-full animate-pulse"></div>
                       <div className="h-4 w-5/6 bg-muted/30 rounded-full animate-pulse"></div>
@@ -145,9 +145,9 @@ export default function Home() {
           >
             <p className="text-sm text-muted-foreground">
               Available topics:{" "}
-              {availableTopics.map((topic, i) => (
+              {availableTopics.map((topic, index) => (
                 <span key={topic} className="font-medium">
-                  {topic}{i < availableTopics.length - 1 ? ", " : ""}
+                  {topic}{index < availableTopics.length - 1 ? ", " : ""}
                 </span>
               ))}
             </p>
@@ -166,7 +166,7 @@ export default function Home() {
             Apex Quotes - Professional Quote Generation System
           </p>
           <div className="flex items-center justify-center mt-2 gap-2">
-            {['NextJS', 'Shadcn UI', 'Tailwind CSS'].map((tech, i) => (
+            {['NextJS', 'Shadcn UI', 'Tailwind CSS'].map((tech, index) => (
               <span 
                 key={tech} 
                 className="text-xs px-2 py-1 bg-muted rounded-full text-muted-foreground"
