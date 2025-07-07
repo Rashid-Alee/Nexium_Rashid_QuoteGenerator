@@ -16,7 +16,8 @@ Professional quote generator built with Next.js, Shadcn UI, and Tailwind CSS.
 - Lucide Icons
 
 ## Deployment
-Deployed on Vercel: [https://apex-quotes.vercel.app](https://apex-quotes.vercel.app)
+Deployed on Vercel: nexium-rashid-quote-generator-tbfk-hze6pjfp6.vercel.app
+
 
 ## Development
 ```bash
